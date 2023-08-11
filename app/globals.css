@@ -18,10 +18,81 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  backdrop-filter: blur(10px);
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.btn {
+  box-shadow: 0px 5px 36px 0px #00adff66;
+  padding: 5px;
+
+  border-radius: 10px;
+  background: linear-gradient(90.8deg, #a2eeff 7.28%, #029af0 89.82%);
+
+  cursor: pointer;
+}
+
+.active-menu {
+  background: linear-gradient(101.13deg, #a2eeff 20.92%, #029af0 96.46%);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari/WebKit browsers */
+  color: transparent;
+}
+
+.active-menu-pointer {
+  background: linear-gradient(180deg, #95e8fe 0%, #029bf1 100%);
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+}
+
+.not-active-menu-pointer {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+}
+
+.mt-spacing {
+  margin-top: 100px;
+}
+
+.sub-text {
+  text-transform: uppercase;
+  text-align: center;
+  width: 450px;
+}
+
+.circle-fill {
+  background: linear-gradient(180deg, #95e8fe 0%, #029bf1 100%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.circle-not-fill {
+  background: #1e3245;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.position-absolute {
+  position: absolute;
+  bottom: 40px;
+  right: 44%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.hero-container {
+}
+
+.hero-secondary-container {
 }

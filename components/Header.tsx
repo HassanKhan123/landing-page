@@ -10,7 +10,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <div className='flex flex-row justify-between'>
+    <div className='flex flex-row justify-between mx-40'>
       <Image src='/assets/logo.svg' alt='logo' width={180} height={43} />
       <div className='flex flex-row justify-between items-center'>
         {headerLinks.map(link => {

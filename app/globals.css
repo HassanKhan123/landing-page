@@ -108,3 +108,18 @@ body {
   right: -35%;
   z-index: -10;
 }
+
+.partners-text-box {
+  width: 50%;
+  text-align: center;
+}
+
+.partners-box {
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

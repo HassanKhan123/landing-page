@@ -123,3 +123,29 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.tokenomics-text-1 {
+  position: absolute;
+  top: 15%;
+  width: 15%;
+}
+
+.tokenomics-text-2 {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  width: 22%;
+}
+
+.tokenomics-text-3 {
+  position: absolute;
+  bottom: 15%;
+  width: 18%;
+}
+
+.tokenomics-text-4 {
+  position: absolute;
+  bottom: 15%;
+  left: 80%;
+  width: 22%;
+}

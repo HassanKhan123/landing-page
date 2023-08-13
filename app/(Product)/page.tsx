@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Carousel from "@/components/Carousel";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
+import Tokenomics from "@/components/Tokenomics";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <About />
       <Carousel />
       <Partners />
+      <Tokenomics />
     </>
   );
 }

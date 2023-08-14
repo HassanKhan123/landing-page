@@ -222,3 +222,7 @@ body {
   list-style-type: disc;
   width: 80%;
 }
+
+.liquidity-container {
+  background: linear-gradient(180deg, #0c1416 0%, rgba(41, 47, 48, 0) 100%);
+}

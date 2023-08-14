@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Carousel from "@/components/Carousel";
 import Hero from "@/components/Hero";
+import Liquidity from "@/components/Liquidity";
 import Mission from "@/components/Mission";
 import Partners from "@/components/Partners";
 import Roadmap from "@/components/Roadmap";
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Carousel />
       <Partners />
+      <Liquidity />
       <Tokenomics />
       <Mission />
       <Roadmap />

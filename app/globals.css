@@ -149,3 +149,12 @@ body {
   left: 80%;
   width: 22%;
 }
+
+.mission-container {
+  margin-top: -5%;
+  background-image: url("/assets/mission-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: cover; */
+  height: 50rem;
+}

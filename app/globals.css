@@ -158,3 +158,67 @@ body {
   /* background-size: cover; */
   height: 50rem;
 }
+
+.roadmap-text-section-1 {
+  position: absolute;
+  left: 80%;
+  top: 7%;
+  width: 100%;
+}
+
+.roadmap-text-section-2 {
+  position: absolute;
+  top: 27%;
+  left: -55%;
+  width: 100%;
+}
+
+.roadmap-text-section-3 {
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  width: 100%;
+}
+
+.roadmap-text-section-4 {
+  position: absolute;
+  top: 64%;
+  left: -55%;
+  width: 100%;
+}
+
+.roadmap-text-section-5 {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  width: 100%;
+}
+
+.quarter-3 {
+  background: linear-gradient(194.34deg, #d96dff 3.9%, #ad00ff 98.12%);
+
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari/WebKit browsers */
+  color: transparent;
+}
+
+.quarter-2 {
+  background: linear-gradient(180deg, #95e8fe 0%, #029bf1 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari/WebKit browsers */
+  color: transparent;
+}
+
+.month {
+  background: linear-gradient(194.34deg, #23ff95 3.9%, #03cd54 98.12%);
+
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari/WebKit browsers */
+  color: transparent;
+}
+
+.roadmap-list {
+  list-style-type: disc;
+  width: 80%;
+}

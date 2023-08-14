@@ -3,6 +3,7 @@ import Carousel from "@/components/Carousel";
 import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
 import Partners from "@/components/Partners";
+import Roadmap from "@/components/Roadmap";
 import Tokenomics from "@/components/Tokenomics";
 import Image from "next/image";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Partners />
       <Tokenomics />
       <Mission />
+      <Roadmap />
     </>
   );
 }

@@ -5,6 +5,7 @@ import Liquidity from "@/components/Liquidity";
 import Mission from "@/components/Mission";
 import Partners from "@/components/Partners";
 import Roadmap from "@/components/Roadmap";
+import Shipping from "@/components/Shipping";
 import Tokenomics from "@/components/Tokenomics";
 import Image from "next/image";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Carousel />
       <Partners />
       <Liquidity />
+      <Shipping />
       <Tokenomics />
       <Mission />
       <Roadmap />

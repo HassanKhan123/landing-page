@@ -226,3 +226,36 @@ body {
 .liquidity-container {
   background: linear-gradient(180deg, #0c1416 0%, rgba(41, 47, 48, 0) 100%);
 }
+
+.shipping-container {
+  /* border-radius: 646px;
+  opacity: 0.3;
+  background: linear-gradient(202deg, #10d4ff 0%, #029af0 100%);
+  filter: blur(250px); */
+}
+
+.shipping-elektrik-logo {
+  margin: -60px 0px -50px 0px;
+}
+
+.shipping-card {
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  width: 371px;
+  height: 440px;
+  /* border: 1px solid #148eff; */
+}
+
+.shipping-card-1 {
+  background-image: url("/assets/shipping-card-1-bg.svg");
+}
+
+.shipping-card-2 {
+  background-image: url("/assets/shipping-card-2-bg.svg");
+}
+
+.shipping-card-3 {
+  background-image: url("/assets/shipping-card-2-bg.svg");
+}

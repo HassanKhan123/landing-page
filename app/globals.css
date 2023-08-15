@@ -210,6 +210,15 @@ body {
   color: transparent;
 }
 
+.new {
+  background: linear-gradient(180deg, #95e8fe 0%, #029bf1 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari/WebKit browsers */
+  color: transparent;
+  padding: 20px;
+}
+
 .month {
   background: linear-gradient(194.34deg, #23ff95 3.9%, #03cd54 98.12%);
 
@@ -258,4 +267,94 @@ body {
 
 .shipping-card-3 {
   background-image: url("/assets/shipping-card-2-bg.svg");
+}
+
+/* .learn-more-container-1 {
+  border-radius: 20px;
+  border: 1.5px solid transparent;
+  background: linear-gradient(180deg, #3c464f 0%, rgba(40, 40, 40, 0) 100%)
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  width: 40%;
+} */
+
+.box-1 {
+  /* width: 40%; */
+}
+
+.box-2 {
+  /* width: 100%; */
+}
+
+.learn-more-container {
+  position: relative;
+
+  padding: 20px;
+}
+.learn-more-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  border: 1.5px solid transparent;
+  background: linear-gradient(180deg, #3c464f 0%, rgba(40, 40, 40, 0) 100%)
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.container-2 {
+  /* width: 40%; */
+}
+
+.learn-more-container-section-1 {
+  background: url("/assets/learn-more-img-1.svg");
+
+  height: 300px;
+
+  width: 100%;
+
+  /* background-position: center; */
+}
+
+.card-text-box {
+  width: 100%;
+
+  padding: 10px;
+  /* background-color: white; */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.flex-item {
+  flex: none;
+  min-width: 40%;
+  white-space: normal; /* Allow text to wrap */
+}
+
+.max-w-md {
+  max-width: 100%; /* Restrict the maximum width of the items */
+}
+
+.flex-shipping-container {
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  white-space: nowrap;
+}
+
+.flex-shipping-item {
+  flex: none;
+  min-width: 20%;
+  white-space: normal; /* Allow text to wrap */
 }

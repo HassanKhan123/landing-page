@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Carousel from "@/components/Carousel";
 import Hero from "@/components/Hero";
+import LearnMore from "@/components/LearnMore";
 import Liquidity from "@/components/Liquidity";
 import Mission from "@/components/Mission";
 import Partners from "@/components/Partners";
@@ -21,6 +22,7 @@ export default function Home() {
       <Tokenomics />
       <Mission />
       <Roadmap />
+      <LearnMore />
     </>
   );
 }

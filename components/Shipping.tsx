@@ -4,7 +4,7 @@ import ScrollCarousel from "./ScrollCarousel";
 
 const Shipping = () => {
   return (
-    <section className='mx-40 mb-40'>
+    <section className='mx-40 mb-40' id='shipping'>
       <div className='flex flex-col items-center justify-center'>
         <Image
           src='/assets/shipping-elektrik.svg'

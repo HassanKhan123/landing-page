@@ -3,7 +3,10 @@ import React from "react";
 
 const Roadmap = () => {
   return (
-    <section className='mx-40 flex flex-col items-center justify-center'>
+    <section
+      className='mx-40 flex flex-col items-center justify-center'
+      id='roadmap'
+    >
       <p className='text-light-1 text-4xl uppercase font-bold'>Roadmap</p>
 
       <div className='relative'>

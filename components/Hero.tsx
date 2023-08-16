@@ -1,9 +1,26 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Hero = () => {
+  const [activeSection, setActiveSection] = useState("hero");
+
+  const smoothScroll = (target: string) => {
+    const element = document.getElementById(target);
+
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 150,
+        behavior: "smooth",
+      });
+
+      setActiveSection(target);
+    }
+  };
+
   return (
-    <div className='hero-container mx-40'>
+    <div className='hero-container mx-40' id='hero'>
       <section className='flex w-full flex-1 flex-col items-center justify-center mt-spacing'>
         <h1 className='text-6xl font-bold'>NEXT GENERATION</h1>
         <p className='text-dark-4 sub-text'>
@@ -21,11 +38,42 @@ const Hero = () => {
         <div className='flex flex-row'>
           <div className='self-center flex-1 hero-section-1'>
             <div>
-              <div className='circle-fill m-5'></div>
-              <div className='circle-not-fill m-5'></div>
-              <div className='circle-not-fill m-5'></div>
-              <div className='circle-not-fill m-5'></div>
-              <div className='circle-not-fill m-5'></div>
+              <div
+                onClick={() => smoothScroll("hero")}
+                className={`${
+                  activeSection === "hero" ? "circle-fill" : "circle-not-fill"
+                } m-5 cursor-pointer`}
+              ></div>
+              <div
+                onClick={() => smoothScroll("about")}
+                className={`${
+                  activeSection === "about" ? "circle-fill" : "circle-not-fill"
+                } m-5 cursor-pointer`}
+              ></div>
+              <div
+                onClick={() => smoothScroll("liquidity")}
+                className={`${
+                  activeSection === "liquidity"
+                    ? "circle-fill"
+                    : "circle-not-fill"
+                } m-5 cursor-pointer`}
+              ></div>
+              <div
+                onClick={() => smoothScroll("shipping")}
+                className={`${
+                  activeSection === "shipping"
+                    ? "circle-fill"
+                    : "circle-not-fill"
+                } m-5 cursor-pointer`}
+              ></div>
+              <div
+                onClick={() => smoothScroll("roadmap")}
+                className={`${
+                  activeSection === "roadmap"
+                    ? "circle-fill"
+                    : "circle-not-fill"
+                } m-5 cursor-pointer`}
+              ></div>
             </div>
 
             <div>

@@ -3,7 +3,7 @@ import React from "react";
 
 const Liquidity = () => {
   return (
-    <section className='liquidity-container px-40 py-20'>
+    <section className='liquidity-container px-40 py-20' id='liquidity'>
       <p className='text-light-1 text-3xl uppercase font-bold'>Liquidity</p>
 
       <div className='flex flex-row justify-between mt-20'>

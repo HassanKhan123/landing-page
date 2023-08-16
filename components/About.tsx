@@ -3,7 +3,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className='flex w-full flex-row items-center justify-center mt-10 mx-40'>
+    <section
+      className='flex w-full flex-row items-center justify-center mt-10 mx-40'
+      id='about'
+    >
       <div className='flex-1 self-start'>
         <p className='text-light-1 text-3xl opacity-30'>ABOUT</p>
         <Image

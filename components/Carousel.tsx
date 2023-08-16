@@ -52,7 +52,7 @@ const Carousel = () => {
                   ? "translate-x-0"
                   : index === (activeIndex + 1) % images.length
                   ? "translate-x-full"
-                  : "translate-x-full -translate-y-1/2"
+                  : "translate-x-300 -translate-y-0"
               }`}
             />
           </>
@@ -89,17 +89,37 @@ const Carousel = () => {
           </div>
         </div>
 
+        {activeIndex !== 0 && images[(activeIndex - 1) % images.length] && (
+          <Image
+            width={400}
+            height={400}
+            key={activeIndex - 1}
+            src={`${images[(activeIndex - 1) % images.length].img}`}
+            alt={`Image ${((activeIndex - 1) % images.length) - 1}`}
+            className={`next-carousel-preview-1 w-1/2 h-full opacity-40`}
+          />
+        )}
         <Image
           width={400}
           height={400}
-          key={activeIndex}
+          key={activeIndex + 1}
           src={`${images[(activeIndex + 1) % images.length].img}`}
           alt={`Image ${((activeIndex + 1) % images.length) + 1}`}
-          className={`next-carousel-preview w-1/2 h-full opacity-40`}
+          className={`next-carousel-preview-2 w-1/2 h-full opacity-40`}
         />
       </div>
 
       <div className='relative'>
+        {activeIndex !== 0 && images[(activeIndex - 1) % images.length] && (
+          <div className='flex w-1/2 flex-1 flex-col items-center justify-center m-auto next-carousel-preview-1 opacity-40'>
+            <p className='text-light-1 text-xl uppercase font-medium'>
+              {images[(activeIndex - 1) % images.length].title}
+            </p>
+            <p className='text-dark-4 text-center text-sm mt-4 uppercase'>
+              {images[(activeIndex - 1) % images.length].description}
+            </p>
+          </div>
+        )}
         <div className='flex w-1/2 flex-1 flex-col items-center justify-center m-auto  mt-5'>
           <p className='text-light-1 text-xl uppercase font-medium'>
             {images[activeIndex].title}
@@ -109,7 +129,7 @@ const Carousel = () => {
           </p>
         </div>
 
-        <div className='flex w-1/2 flex-1 flex-col items-center justify-center m-auto   next-carousel-preview opacity-40'>
+        <div className='flex w-1/2 flex-1 flex-col items-center justify-center m-auto next-carousel-preview-2 opacity-40'>
           <p className='text-light-1 text-xl uppercase font-medium'>
             {images[(activeIndex + 1) % images.length].title}
           </p>
